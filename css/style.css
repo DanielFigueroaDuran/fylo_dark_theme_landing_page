@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+:root {
+  --blue-intro-background: hsl(217, 28%, 15%);
+  --blue-main-background: hsl(218, 28%, 13%);
+  --blue-footer-background: hsl(216, 53%, 9%);
+  --blue-testimonials-background: hsl(219, 30%, 18%);
+  --cyan-gradient: hsl(176, 68%, 64%);
+  --blue-gradient: hsl(198, 60%, 50%);
+  --light-error: hsl(0, 100%, 63%);
+  --gradient: linear-gradient(
+    to right,
+    var(--cyan-gradient),
+    var(--blue-gradient)
+  );
+  --heading-font: "Raleway", sans-serif;
+  --heading-body: "Open Sans", sans-serif;
+  --padding-container: 60px 0;
+  --color: #fff;
+}
+
+body {
+  font-family: var(--heading-body);
+  background-color: var(--blue-main-background);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: var(--padding-container);
+}
+
+.hero {
+  background-color: var(--blue-intro-background);
+  position: relative;
+  color: var(--color);
+}
+
+.hero__wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40%;
+  background-color: var(--blue-main-background);
+}
+
+.hero__wave::before {
+  content: "";
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: -100px;
+  background-image: url("../assets/images/bg-curvy-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  font-family: var(--heading-font);
+}
+
+.nav__logo {
+  width: 30%;
+}
+
+.nav__img {
+  width: 100%;
+  display: block;
+}
+
+.nav__links {
+  margin-left: auto;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1em;
+}
+
+.nav__link {
+  color: var(--color);
+  text-decoration: none;
+}
+
+.hero__main {
+  text-align: center;
+  position: relative;
+}
+
+.hero__img {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero__title {
+  font-family: var(--heading-font);
+  margin: -2em 0 1em;
+}
+
+.hero__paragraph {
+  line-height: 1.5;
+  margin-bottom: 1.5em;
+}
+
+.hero__cta {
+  display: inline-block;
+  width: 250px;
+  padding: 15px 0;
+  background-image: var(--gradient);
+  color: var(--color);
+  font-family: var(--heading-font);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+/* ------------Cards------- */
+
+.cards {
+  text-align: center;
+  color: var(--color);
+  display: grid;
+  gap: 5em;
+}

@@ -12,24 +12,105 @@
       href="./images/favicon-32x32.png"
     />
 
-    <title>
-      Frontend Mentor | Fylo landing page with dark theme and features grid
-    </title>
+    <title>Fylo landing page with dark theme and features grid</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- Features Team Sign In All your files in one secure location, accessible
-    anywhere. Fylo stores all your most important files in one secure location.
-    Access them wherever you need, share and collaborate with friends family,
-    and co-workers. Get Started Access your files, anywhere The ability to use a
-    smartphone, tablet, or computer to access your account means your files
-    follow you everywhere. Security you can trust 2-factor authentication and
-    user-controlled encryption are just a couple of the security features we
-    allow to help secure your files. Real-time collaboration Securely share
-    files and folders with friends, family and colleagues for live
-    collaboration. No email attachments required. Store any type of file Whether
-    you're sharing holidays photos or work documents, Fylo has you covered
-    allowing for all file types to be securely stored and shared. Stay
+    <header class="hero">
+      <div class="hero__wave"></div>
+
+      <nav class="nav container">
+        <figure class="nav__logo">
+          <img src="./assets/images/logo.svg" alt="logo" class="nav__img" />
+        </figure>
+
+        <div class="nav__links">
+          <a href="#" class="nav__link">Features</a>
+          <a href="#" class="nav__link">Team</a>
+          <a href="#" class="nav__link">Sign In</a>
+        </div>
+      </nav>
+
+      <section class="hero__main container">
+        <img
+          src="./assets/images/illustration-intro.png"
+          alt="illustration"
+          class="hero__img"
+        />
+
+        <div class="hero__main container">
+          <h1 class="hero__title">
+            All your files in one secure location, accessible anywhere.
+          </h1>
+          <p class="hero__paragraph">
+            Fylo stores all your most important files in one secure location.
+            Access them wherever you need, share and collaborate with friends
+            family, and co-workers.
+          </p>
+          <a href="" class="hero__cta">Get Started</a>
+        </div>
+      </section>
+    </header>
+
+    <main class="main container">
+      <section class="cards container">
+        <article class="card__item">
+          <img
+            src="./assets/images/icon-access-anywhere.svg"
+            alt="access-anywhere"
+            class="cards__img"
+          />
+          <h3 class="card__title">Access your files, anywhere</h3>
+          <p class="card__paragraph">
+            The ability to use a smartphone, tablet, or computer to access your
+            account means your files follow you everywhere.
+          </p>
+        </article>
+
+        <article class="card__item">
+          <img
+            src="./assets/images/icon-security.svg"
+            alt="icon-security"
+            class="cards__img"
+          />
+
+          <h3 class="card__title">Security you can trust</h3>
+          <p class="card__paragraph">
+            2-factor authentication and user-controlled encryption are just a
+            couple of the security features we allow to help secure your files.
+          </p>
+        </article>
+
+        <article class="card__item">
+          <img
+            src="./assets/images/icon-collaboration.svg"
+            alt="icon-collaboration"
+            class="cards__img"
+          />
+
+          <h3 class="card__title">Real-time collaboration</h3>
+          <p class="card__paragraph">
+            Securely share files and folders with friends, family and colleagues
+            for live collaboration. No email attachments required.
+          </p>
+        </article>
+
+        <article class="card__item">
+          <img
+            src="./assets/images/icon-any-file.svg"
+            alt=""
+            class="cards__img"
+          />
+          <h3 class="card__title">Store any type of file</h3>
+          <p class="card__paragraph">
+            Whether you're sharing holidays photos or work documents, Fylo has
+            you covered allowing for all file types to be securely stored and
+            shared.
+          </p>
+        </article>
+      </section>
+    </main>
+    <!--       Stay
     productive, wherever you are Never let location be an issue when accessing
     your files. Fylo has you covered for all of your file storage needs.
     Securely share files and folders with friends, family and colleagues for
