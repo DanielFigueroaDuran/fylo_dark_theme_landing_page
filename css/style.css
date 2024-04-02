@@ -1,10 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 *,
-::before,
-::after {
+::after,
+::before {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   /* outline: 1px solid red; */
 }
@@ -16,7 +15,6 @@
   --blue-testimonials-background: hsl(219, 30%, 18%);
   --cyan-gradient: hsl(176, 68%, 64%);
   --blue-gradient: hsl(198, 60%, 50%);
-  --light-error: hsl(0, 100%, 63%);
   --gradient: linear-gradient(
     to right,
     var(--cyan-gradient),
@@ -102,7 +100,7 @@ body {
 .hero__img {
   display: block;
   width: 100%;
-  max-width: 600px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -265,7 +263,6 @@ body {
     var(--blue-main-background) 50%,
     var(--blue-footer-background) 50%
   );
-  border: 1px solid red;
   padding: 60px 0;
 }
 
@@ -375,4 +372,77 @@ body {
 
 .footer__media {
   display: block;
+}
+
+@media (min-width: 768px) {
+  .hero__wave::before {
+    background-image: url("../assets/images/bg-curvy-desktop.svg");
+  }
+
+  .hero__title {
+    margin-top: 2em;
+    font-size: 2em;
+  }
+  /* --------------------Cards------------------- */
+  .cards {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3em 4em;
+  }
+  /* ---------------------about------------------- */
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    align-items: center;
+  }
+
+  .about__title {
+    font-size: 2rem;
+  }
+
+  /* ------------testimony------------ */
+
+  .testimony {
+    justify-content: space-between;
+  }
+
+  .testimony__item {
+    width: 30%;
+  }
+
+  .join__container {
+    max-width: 800px;
+  }
+
+  .join__form {
+    grid-template-columns: 1fr max-content;
+  }
+
+  /* ------------footer------- */
+  .footer__content {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2em;
+  }
+
+  .footer__contact {
+    max-width: 200px;
+  }
+
+  .footer__nav {
+    margin-top: 0;
+  }
+
+  .footer__social {
+    margin: 0;
+  }
+
+  .footer__direction--first {
+    max-width: 300px;
+  }
+
+  .footer__direction--second {
+    margin: 0 0 1em;
+  }
 }
